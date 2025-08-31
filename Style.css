@@ -32,8 +32,11 @@ html,body{
 .logo{
     height: 100%;
     width: 100%;
-    background-image: url(logo.jpg);
-    background-size: cover;  
+}
+.logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .nav-location {
     height: 50px;
@@ -70,9 +73,6 @@ html,body{
 .nav-searchbar select {
     height: 100%;
     width: 55px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     background-color: #ffffffd7;
     color: #2327279d;
     border-top-left-radius: 5px ;
@@ -82,7 +82,7 @@ html,body{
     font-size: 12px;
     font-weight: 600;
     text-align: center;
-    
+    outline: none;
 }
 
 .nav-searchbar Input {
@@ -158,11 +158,13 @@ html,body{
 
 .panel {
     height: 40px;
+    width: 100%;
     background-color: #222F3d;
     display: flex;
     color: white;
     align-items: center;
     padding-left: 15px ;
+    
 }
 .panel-all {
     height: 100%;
@@ -172,6 +174,7 @@ html,body{
     justify-content: center;
     font-size: 14px;
     font-weight: 600;
+    
 }
 .panel-options {
     height: 100%;
@@ -179,20 +182,26 @@ html,body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+   
 }
-.panel-options p{
-    display: inline;
+.menu-option {
+    height: 100%;
     font-size: 14px;
     font-weight: 540;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 .panel-deals {
+    position: absolute;
+    right: 3%;
     height: 40px;
     font-size: 15px;
     font-weight: 550;
-    right: 45px;
-    position:absolute;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 /* HERO - SECTION*/
@@ -249,6 +258,9 @@ html,body{
     justify-content: space-evenly;
     align-items:center;
 }
+.box:hover{
+    border: 2px rgb(247, 178, 50) solid;
+}
 .first-row {
     height: 430px;
     width: 100%;
@@ -256,7 +268,9 @@ html,body{
     align-items: center;
     justify-content: space-evenly;
 }
-
+.r-hover:hover {
+    border: 2px rgb(247, 178, 50) solid;;
+}
 .second-row {
      height: 460px;
     width: 100%;
@@ -268,7 +282,7 @@ html,body{
 .product {
     height: 310px;
     width: 310px;
-    background-color: #ffffff;
+    background-color: #f5f6f6;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -279,6 +293,9 @@ html,body{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+.product img:hover {
+    border: #2162a1 2.5px solid;
 }
 .product-title{
     width: 310px;
@@ -298,6 +315,9 @@ html,body{
     height:120px ;
     width: 100%;
 }
+.small-product img:hover {
+    border: #2162a1 2px solid;
+}
 .small-product-link {
     font-size: 13px;
     width: 100%;
@@ -312,11 +332,21 @@ html,body{
     background-color: #ffffff;
     position: relative;
     left: 20px;
+    border: 2px solid  transparent ;
+    
 }
 .long-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.long-content img {
+     border:  2px solid transparent;
+}
+.long-content img:hover {
+    /* border: #2367aa 2px solid; */
+    border-radius: 3px;
+    opacity: 70%;   
 }
 
 .l-prod-title{
@@ -333,6 +363,7 @@ html,body{
     background-color: #ffffff;
     position: relative;
     left: 20px;
+    border: 2px solid  transparent ;
 }
 
 .fifth-row {
@@ -351,6 +382,7 @@ html,body{
     background-color: #ffffff;
     position: relative;
     left: 20px;
+    border: 2px solid  transparent ;
 }
 .seventh-row {
     height: 282px;
@@ -360,6 +392,7 @@ html,body{
     background-color: #ffffff;
     position: relative;
     left: 20px;
+    border: 2px solid  transparent ;
 }
 
 
@@ -389,8 +422,6 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-
 }
 .sign-in-btn  button {
     height: 30px;
@@ -400,9 +431,13 @@ html,body{
     border-radius: 25px;
     background-color: #ffd814;
     color: black;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 5;
 }
+.sign-in-btn  button:hover{
+    background-color:#faca2d ;
+}
+
 .sign-in-new {
     width: 100%;
     display: flex;
@@ -447,6 +482,9 @@ html,body{
     color: #ffffff;
     margin: 10px;
 }
+.redirects li:hover{
+    text-decoration: underline;
+}
 .redirects {
     height: 100%;
     width: 200px;
@@ -456,6 +494,7 @@ html,body{
     font-weight: 600;
     font-size: 16px;
 }
+
 
 .thank-you {
     height: 30%;
