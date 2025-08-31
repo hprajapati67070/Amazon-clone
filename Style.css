@@ -84,7 +84,6 @@ html,body{
     text-align: center;
     outline: none;
 }
-
 .nav-searchbar Input {
     font-size: 15px;
     font-weight: 549;
@@ -195,7 +194,7 @@ html,body{
 }
 .panel-deals {
     position: absolute;
-    right: 3%;
+    right: 2%;
     height: 40px;
     font-size: 15px;
     font-weight: 550;
@@ -509,13 +508,24 @@ html,body{
 }
 .langs{
     margin-left: 25px;
+    
 }
-.langs button {
+.langs button{
+    background-color: transparent;
+    border: none;
+    margin-left:10px ;
+    margin-bottom: 10px;
+}
+
+.langs button select {
     height: 33px;
     width: 133px;
     background-color: #232f3e;
     color: #cccccc;
-    border: 0.5px solid #cccccc;
-    border-radius: 5px;
-    margin-right: 5px;
+    border: 1px #cccccc solid;
+    border-radius: 7px;
+}
+.langs button select:hover{
+    background-color: #f5f6f6;
+    color: #0f1111;
 }
